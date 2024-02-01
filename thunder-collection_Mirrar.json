@@ -1,0 +1,113 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Mirrar",
+    "dateExported": "2024-02-01T16:07:22.389Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "0f291e00-5c0d-410c-bede-10b8907c46c4",
+            "colId": "5d0cda2d-72e3-475b-8d20-0313278fa1d0",
+            "containerId": "",
+            "name": "create",
+            "url": "http://localhost:5000/product/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-30T19:06:30.089Z",
+            "modified": "2024-01-31T10:43:11.323Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"analog watch\",\n  \"description\": \"fastrack\",\n  \"price\": 5999,\n  \"variants\": [\n    {\n      \"name\": \"digital watch\",\n      \"sku\": \"w\",\n      \"additionalCost\": 9,\n      \"stockCount\": 4\n    },\n    {\n      \"name\": \"test watch\",\n      \"sku\": \"p\",\n      \"additionalCost\": 10,\n      \"stockCount\": 9\n    }\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ed646be0-2496-41aa-8ae0-d5fe9a49c9c8",
+            "colId": "5d0cda2d-72e3-475b-8d20-0313278fa1d0",
+            "containerId": "",
+            "name": "getall",
+            "url": "http://localhost:5000/product/getAll",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-01-30T19:23:24.943Z",
+            "modified": "2024-01-30T19:23:42.095Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d7b15870-3ad8-4a19-a7fc-36feaa597d1f",
+            "colId": "5d0cda2d-72e3-475b-8d20-0313278fa1d0",
+            "containerId": "",
+            "name": "getspecific",
+            "url": "http://localhost:5000/product/65b94c83deb99ef120e50202",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-01-30T19:24:18.459Z",
+            "modified": "2024-01-30T19:24:39.088Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "49f9a126-483c-4e49-a870-6b9a4282614d",
+            "colId": "5d0cda2d-72e3-475b-8d20-0313278fa1d0",
+            "containerId": "",
+            "name": "update",
+            "url": "http://localhost:5000/product/65b94c83deb99ef120e50202",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-01-30T19:25:10.427Z",
+            "modified": "2024-01-30T19:27:39.670Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"price\": 999\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a914158c-b45e-44ab-a49f-77551dae9832",
+            "colId": "5d0cda2d-72e3-475b-8d20-0313278fa1d0",
+            "containerId": "",
+            "name": "delete",
+            "url": "http://localhost:5000/product/65b94b54de5f370eaa2b0eae",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-01-30T19:28:52.152Z",
+            "modified": "2024-01-30T19:30:35.853Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c968c2d9-4aab-4fe1-86fd-469183e8db90",
+            "colId": "5d0cda2d-72e3-475b-8d20-0313278fa1d0",
+            "containerId": "",
+            "name": "search",
+            "url": "http://localhost:5000/search/T-shirt 2",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-01-30T19:33:19.993Z",
+            "modified": "2024-01-31T08:49:29.604Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
